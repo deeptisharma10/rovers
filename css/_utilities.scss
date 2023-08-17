@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700;800;900&display=swap');
+$yellow : #fbc02d;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.slick-disabled {
+    opacity: 0;
+    pointer-events:none;
+}
+
+
+
+
+#border-bt{
+    position: relative;
+    &::after {
+        content: "";
+        top: 2.9rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        max-width: 8rem;
+        height: 0.15rem;
+        display: block;
+        position: absolute;
+        background: #fbc02d;
+background: linear-gradient(90deg, #fbc02d 49%, rgba(255,255,255,0.874562324929972) 50%);
+      }
+}
