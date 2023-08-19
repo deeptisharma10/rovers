@@ -1715,6 +1715,17 @@ span.small-text {
     padding: 0 35px;
   }
 }
+@media (min-width: 992px) and (max-width: 1200px) {
+  #cssmenu > ul > li > a, #cssmenu ul li.getinv a {
+    font-size: 15px;
+  }
+  #cssmenu > ul > li.has-sub > a {
+    padding-right: 0;
+  }
+  #cssmenu > ul > li.has-sub > a::after {
+    border: none !important;
+  }
+}
 @media screen and (max-width: 991px) {
   .header-nav-wrapper {
     background: #333;
@@ -1768,7 +1779,10 @@ span.small-text {
 
 .card_wrapper .about_card .about-club {
   width: 100%;
-  max-height: 520px;
+  height: 33rem;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
   overflow: visible;
 }
 
@@ -1851,6 +1865,10 @@ span.small-text {
 .who_we_are .img_wrapper {
   border: 1px solid rgba(255, 255, 255, 0.325);
   padding: 1px;
+  border-radius: 10px !important;
+}
+.who_we_are .img_wrapper img {
+  border-radius: 10px !important;
 }
 
 .view_news:hover {
@@ -1878,6 +1896,16 @@ span.small-text {
   bottom: -0.5rem;
   background: rgb(251, 242, 63);
   background: linear-gradient(90deg, rgb(251, 242, 63) 49%, rgb(16, 8, 123) 50%);
+}
+@media (max-width: 767px) {
+  .news_sect .heading {
+    position: relative;
+    text-align: center;
+  }
+  .news_sect .heading::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 .news_sect .view_news {
   font-weight: 600;
@@ -2203,9 +2231,15 @@ span.small-text {
   gap: 1rem;
 }
 .social_links ul .social-link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: black;
   background-color: #fff;
   border-radius: 50%;
   padding: 0.6rem 0.7rem;
   font-size: 0.8rem;
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */

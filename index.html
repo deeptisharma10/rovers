@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/slick-theme.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/drupal.js" defer></script>
 </head>
 <body>
   <div class="header_top_bg">
@@ -193,10 +194,18 @@
       </div>
     </div>
   </header>
+  <style>
+    .app_canvas {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  </style>
   <div class="transparent_head">
     <div class="banner_area" style="min-height:800px">
       <div class="slideshow d-hero" style="display:block !important">
-        <canvas id="canvas" class="app_canvas"></canvas>
+        <canvas id="canvas" class="app_canvas" width="1728" height="576"></canvas>
         <div class="right_img">
           <img src="images/DOG-detail.png" class="img-fluid">
         </div>
@@ -327,7 +336,7 @@
 
 <section class="card mt-4">
     <div class="container">
-            <div class="row align-items-center">        
+            <div class="row align-items-center gy-4">        
               <div class="col-md-4">
                 <div class="fav_card img-card">
                 <h5 class="text-center mb-4">Under 6</h5>
@@ -383,7 +392,7 @@
 </section>
 <section class="who_we_are mt-4">
   <div class="container">
-    <div class="row">
+    <div class="row gy-4">
       <div class="col-md-6">
         <div class="text_content">
           <h2 class="heading">who we are</h2>
@@ -409,7 +418,7 @@
       <div class="row g-4">
         <div class="col-md-6">
         <h4 class="heading">latest news</h4>  </div>
-        <div class="col-md-6 text-end">
+        <div class="col-md-6 text-md-end text-center order-md-1 order-5">
           <a href="#" class="view_news">>View all news</a>
         </div>
         <div class="col-md-12">
@@ -570,8 +579,6 @@
     <div class="col-md-4 col-sm-6">
        <a class="zoom_img" href="images/rover_gallery3.jpg"><img src="images/rover_gallery3.jpg" class="img-fluid" alt=""></a>
     </div>
-  </div>
-  <div class="row g-0">
     <div class="col-md-4 col-sm-6">
        <a class="zoom_img" href="images/rover_gallery4.jpg"><img src="images/rover_gallery4.jpg" class="img-fluid" alt=""></a>
     </div>
@@ -728,14 +735,21 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
-    <script src="js/jquery.min.js"></script>
+    
+    <!-- <script src="js/jquery.min.js"></script> -->
+    <script src="js/jquery-1.7.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/sticky-header.js"></script>
-    <script src="js/slick.js"></script>    
-    <script src="js/jquery.counterup.js"></script>
-    <script src="js/jquery.waypoints.js"></script>
+    <script src="js/slick.js"></script>        
+    <!-- <script src="js/jquery.counterup.js"></script>
+    <script src="js/jquery.waypoints.js"></script> -->
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
     <script src="js/menu.js"></script>
+    <script src="js/ann.js" defer="defer"></script>
+    <script src="js/adobe_an.js" defer="defer"></script>
     <script src="./js/custom.js"></script>
+
   
 </body>
 </html>

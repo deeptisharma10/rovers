@@ -1634,3 +1634,21 @@ span.small-text {
     padding: 0 35px;
   }
 }
+
+@media (min-width: 992px) and (max-width: 1200px){
+  #cssmenu > ul > li > a, #cssmenu ul li.getinv a {
+      font-size: 15px;
+  }
+  #cssmenu > ul > li.has-sub > a {
+    padding-right: 0;
+}
+// #cssmenu > ul > li.has-sub.header-black-btn > a::after{
+//   border: none;
+// }
+// #cssmenu > ul > li.has-sub.header-yellow-btn > a::after{
+//   border: none;
+// }
+#cssmenu > ul > li.has-sub > a::after {
+  border: none !important;
+}
+  }
